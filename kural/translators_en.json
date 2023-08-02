@@ -1,0 +1,16 @@
+[
+	{
+		"id":1,
+		"name":"Prof. M.Varadharajan",
+		"title":"Vice-Chancellor University of Madurai",
+		"description":"He wrote explanation text to Kural in Tamil. His explanations are clear, crisp & unbaised.",
+		"photo":"img/mv.jpeg"
+	},
+	{
+		"id":2,
+		"name":"Rev.G.U.Pope",
+		"title":"Tamil Scholar & Christian Missionary",
+		"description":"He spend 40 years in Tamil Nadu, translated Thirukkural in English on Sept 1886.",
+		"photo":"img/gup.jpg"
+	}
+]

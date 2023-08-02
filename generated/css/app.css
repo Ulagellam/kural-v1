@@ -1,0 +1,400 @@
+/* app css stylesheet */
+/*<style>
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>*/
+/*body { 
+  background: #FFFFFF !important;  
+  height: 100% !important;
+}*/
+.text-center {
+  text-align: center;
+}
+.kural {
+  font-size: 16px;
+  margin-right: 5px;
+  font-weight: 900;
+  color: #7E57C2;
+}
+.kural-mobile {
+  font-size: 13px;
+  font-weight: 900;
+  margin-right: 5px;
+  color: #7E57C2;
+}
+.meaning-text {
+  font-size: 12px;
+}
+.main-navigation {
+  height: 75px;
+  max-height: 75px;
+}
+.mid-width .multiselect-container {
+  width: 100px;
+}
+.mid-width.wrapItems .multiselect-container > li > a {
+  white-space: normal;
+}
+.div-inline {
+  display: inline-block;
+}
+label {
+  /* Other styling.. */
+  text-align: right;
+  clear: both;
+  float: left;
+  margin-right: 15px;
+}
+.menutransform {
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, 25%);
+}
+.pal {
+  position: relative;
+  top: 80px;
+  left: 50%;
+  width: 430px;
+  padding: 5px 5px 12px 11px;
+  border-radius: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+.iyal {
+  position: relative;
+  top: 80px;
+  left: 50%;
+  width: 210px;
+  padding: 5px 5px 12px 11px;
+  border-radius: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+.athikaram {
+  position: relative;
+  top: 80px;
+  left: 50%;
+  width: 290px;
+  padding: 5px 5px 12px 11px;
+  border-radius: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+.table-center {
+  background: #fff;
+  position: relative;
+  top: 80px;
+}
+/* Toolbar area */
+.menu {
+  background-color: transparent;
+  border: none;
+  height: 38px;
+  margin: 16px;
+  width: 36px;
+}
+md-toolbar h3 {
+  margin: auto;
+  font-weight: 500;
+}
+/* Sidenav area */
+md-list-item > button {
+  width: 100%;
+  text-align: left !important;
+  height: 70px;
+}
+md-icon.avatar {
+  margin-right: 20px;
+}
+md-list .md-button.selected {
+  color: #03a9f4;
+}
+button#main {
+  margin-bottom: 10px;
+}
+md-sidenav > md-toolbar {
+  height: 64px;
+}
+md-list-item {
+  overflow: hidden;
+}
+/* Primary content area */
+#content {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+}
+#content .md-button.contact {
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  margin: 8px auto 16px 0;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+#content md-icon.avatar {
+  margin-top: 10px;
+}
+#content .md-button.contact > md-icon {
+  fill: black;
+  width: 36px;
+  height: 36px;
+}
+#content .md-button.contact:active > md-icon {
+  background-color: #dadada;
+  border-radius: 75%;
+  padding: 4px;
+  transition: all 100ms ease-out 30ms;
+}
+/* Utils */
+/* Typography support coming in 0.8.0 */
+.avatar {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px;
+  vertical-align: middle;
+}
+md-bottom-sheet md-icon {
+  margin-right: 20px;
+}
+span.name {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-left: 5px;
+}
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white;
+}
+[scroll] {
+  position: fixed;
+  top: 0;
+}
+[md-header-picture] {
+  position: relative;
+  width: 100%;
+  height: 0;
+  /* Simple trick to keep a 16:9 ratio on your background image (height=0;padding-bottom=56.25%) */
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  background-size: 160%;
+  /* You can override this value if your picture has a weird ratio */
+  background-position: 50% 50%;
+}
+@media (max-width: 600px) {
+  .kural {
+    margin-top: -15px;
+  }
+}
+@media (max-width: 400px) {
+  .kural {
+    font-size: 12px;
+  }
+}
+footer {
+  background-color: #ECECEC;
+}
+p.ex1 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+p.alcenter {
+  text-align: center;
+}
+a:link {
+  text-decoration: none;
+}
+md-sidenav,
+md-backdrop {
+  position: fixed !important;
+}
+md-backdrop ~ md-content {
+  position: fixed;
+  overflow: hidden;
+}
+.breadcrumb > li + li:before {
+  color: #CCCCCC;
+  content: "/ ";
+  padding: 0 5px;
+}
+md-card[md-ink-ripple] {
+  position: relative;
+}
+a:visited {
+  color: #7E57C2 !important;
+}
+a:active {
+  color: #8566BB !important;
+}
+a {
+  color: #8D8D8D !important;
+}
+a.title {
+  color: white !important;
+}
+small.copyright {
+  font-size: 9px;
+}
+.butter-bar {
+  display: none;
+}
+.butter-bar.show {
+  display: block;
+  position: absolute;
+  background: yellow;
+  border: 1px solid #b4b400;
+  margin: 0 50%;
+  padding: .5em 2em;
+}
+/** for pages that don't load angular but have angular templates in them. **/
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+.box img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 22;
+}
+.box:hover img {
+  -webkit-transform: scale(2.3);
+  transform: scale(2.3);
+  z-index: 23;
+}
+/*@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes rotate360 {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+.spinner {
+  display:inline-block;
+  border-radius: 50px;
+  border-style: solid;
+  border-bottom-color: #3b5641;
+  border-top-color: #67b3a9;
+  border-left-color: #df7950;
+  border-right-color: #decb3f;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  animation: rotate360 1s linear infinite;
+  -webkit-animation: rotate360 1s linear infinite;
+
+  border-width: 4px;
+  width: 24px;
+  height: 24px;
+}*/
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+nav a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  font-size: 1em;
+}
+nav a:hover,
+nav a:focus {
+  outline: none;
+}
+/* Effect 19: 3D side */
+.cl-effect-19 a {
+  line-height: 2em;
+  margin: 15px;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+  width: 200px;
+}
+.cl-effect-19 a span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 0 14px;
+  background: #7E57C2;
+  -webkit-transition: -webkit-transform 0.4s, background 0.4s;
+  -moz-transition: -moz-transform 0.4s, background 0.4s;
+  transition: transform 0.4s, background 0.4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50% -100px;
+  -moz-transform-origin: 50% 50% -100px;
+  transform-origin: 50% 50% -100px;
+}
+.csstransforms3d .cl-effect-19 a span::before {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  content: attr(data-hover);
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  transition: background 0.4s;
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+.cl-effect-19 a:hover span,
+.cl-effect-19 a:focus span {
+  background: #fff;
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+.csstransforms3d .cl-effect-19 a:hover span::before,
+.csstransforms3d .cl-effect-19 a:focus span::before {
+  background: #7E57C2;
+}
+.menu-icon {
+  width: 24px;
+  height: 24px;
+}
+i {
+  display: inline-block;
+  margin-right: .5em;
+}

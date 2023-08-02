@@ -1,0 +1,87 @@
+<div>
+
+    <div flex="30" >
+    </div>
+
+    <div flex="100" >
+        <section layout="row" layout-xs="column" layout-align="center center" layout-wrap>
+            <span ng-repeat="p in pal">
+                <md-button ng-click='selectedIyl(p.id)' class="md-primary" >
+                    <h1>{{p.name}}</h1>
+                </md-button>
+            </span>
+        </section>
+    </div>
+
+    <div flex="100" flex class="text-center">
+        <md-divider ></md-divider>
+        <md-input-container>
+            <label><strong>{{labels.iyal}}</strong></label>
+            <md-select id="sel2" ng-model="iyal" ng-change="selectedAthikaram(iyal)">
+                <md-option ng-repeat="iyal in iyals" ng-value="iyal" ng-selected="$first">
+                    {{iyal}}
+                </md-option>
+            </md-select>
+        </md-input-container>
+    </div>
+
+    <div flex="100" layout="column">
+        <div layout="column" layout-align="start center" flex>
+            <md-input-container>
+                <label><strong>{{labels.athikaramName}}</strong></label>
+                <md-select id="sel3" ng-model="athikaram" ng-change="selectedKurals(athikaram)">
+                    <md-option ng-repeat="athikaram in athikarams" ng-value="athikaram" ng-selected="$first">
+                        {{athikaram}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+    </div>
+
+    <div flex="50" layout="column" >
+        <div layout="column" layout-align="start center" flex>
+        </div>
+    </div>
+
+    <div flex="100">
+        <md-list class="md-dense" flex>
+            <md-subheader class="md-primary"> {{selectedPal}} > {{iyal}} > {{selAthikaram}}</md-subheader>
+
+            <md-list-item hide-xs class="md-2-line" layout layout-xs="column"  ng-repeat="kural in kurals" ng-click="playKural(kural)">
+                <label>{{kural.id}}</label>
+                <div flex="50" class="md-list-item-text compact">
+                    <div md-ink-ripple="#7E57C2">
+                        <md-tooltip ng-if="langExtension == ''">
+                            {{playtip}}
+                        </md-tooltip>
+                        <h2 class="kural">{{ kural.l1}}<br/>
+                            {{ kural.l2}}</h2>
+                    </div>
+                    <div ng-if="langExtension == ''">
+                        <audio id={{kural.id}} ng-src={{kural.song}}></audio>
+                    </div>
+                </div>
+                <div md-no-ink class flex="50">
+                    <span>{{ trans[$index].meaning}}</span>
+                </div>
+                <md-list-item-divider ></md-list-item-divider>
+            </md-list-item>
+
+            <md-card md-ink-ripple="#7E57C2" style="padding: 5px; text-align: left;"show-xs hide-gt-xs class="md-2-line" layout layout-xs="column" flex="90" flex-offset="5" ng-repeat="kural in kurals" ng-click="playKural(kural)">
+                <p class="alcenter">{{kural.id}}<p>
+                <div flex class="md-list-item-text compact">
+                    <div>
+                        <h2 class="kural-mobile" ng-style="countOf(kural.l1) > 38 ? {'font-size': '12px'} : {'font-size': '13px'}">{{ kural.l1}}<br/>
+                            {{ kural.l2}}</h2>
+                    </div>
+                    <div ng-if="langExtension == ''">
+                        <audio id={{kural.id}} ng-src={{kural.song}}></audio>
+                    </div>
+                </div>
+                <div class flex>
+                    <p class="meaning-text"> {{ trans[$index].meaning}} </p>
+                </div>
+            </md-card>
+    </div>
+
+</div>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html ng-app="kuralpalApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Kural</title>
+        <!-- <base href="/"> -->
+        <script src="vendorjs/modernizr.custom.js"></script>
+        <script src="/node_modules/angular/angular.min.js"></script>
+        <link rel="stylesheet" href="/generated/css/app.css">
+        <link rel="stylesheet" href="/node_modules/angular-material/angular-material.min.css">
+        <!-- <link rel="stylesheet" href="css/spinner/treasure-overlay-spinner.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    </head>
+
+    <body ng-controller='HomeController' layout="row" style="height:100px;" ng-cloak layout-wrap>
+
+        <!-- <treasure-overlay-spinner active='spinner.active'> -->
+        <div layout="row">
+            <md-sidenav md-component-id="left" md-is-open="isSidenavOpen" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-lg')">
+                <md-toolbar class="md-theme-indigo md-medium-tall">
+                    <h1 class="md-toolbar-tools">{{labels.siteName}}</h1>
+                </md-toolbar>
+                <md-item>
+                    <a>
+                        <md-item-content md-ink-ripple layout="row" layout-align="start center">
+                            <div class="inset"><a href = "#/">{{labels.home}}</a></div>
+                            <md-divider ></md-divider>
+                            <div class="inset"><a href = "#/valluvar">{{labels.valluvar}}</a></div>
+                            <md-divider ></md-divider>
+                            <div class="inset"><a href = "#/translators">{{labels.translators}}</a></div>
+                            <md-divider ></md-divider>
+                            <div class="inset"><a href="#/why">{{labels.why}}</a></div>
+                            <md-divider ></md-divider>
+                            <div class="inset"><a href="#/contribute">{{labels.contribute}}</a></div>
+                            <md-divider ></md-divider>
+                            <div class="inset"><a href="#/about">{{labels.aboutus}}</a></div>
+                            <md-divider ></md-divider>
+                        </md-item-content>
+                    </a>
+                </md-item>
+            </md-sidenav>
+
+        </div> 
+    <md-toolbar style="height:85px; max-height:85px" layout="row">
+        <div class="md-toolbar-tools" style="margin-top: 20px;">
+            <md-button class="md-icon-button" aria-label="Settings" ng-click="openLeftMenu()">
+                <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+            </md-button>
+            <nav class="cl-effect-19"><a class="title" href = "#/">
+                    <span data-hover="{{labels.siteName}}">{{labels.siteName}}</span></a></nav>
+            <span flex></span>
+            <md-input-container>
+                <label><strong><font color="White">{{labels.langName}}</font></strong></label>
+                <md-select id="sel4" ng-model="lng.name" ng-change="selectedTrans(lng.name)">
+                    <md-option ng-repeat="lng in lang" value="{{lng.name}}" ng-selected="$first">
+                        <!--img class="menu-icon" src="{{ lng.img }}" /-->
+                        {{lng.name}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+    </md-toolbar>
+
+    <div ui-view></div>
+
+    <div flex="100">
+        <md-divider ></md-divider>
+        <footer>
+            <div layout ="row" layout-align="center center">
+                <a target="_blank" href="https://www.facebook.com/kuralpal">
+                    <i class="fa fa-facebook-official fa-2x fa-fw" aria-hidden="true"></i>
+                </a>
+                <a target="_blank"  href="https://twitter.com/kuralpal">
+                    <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/company/kuralpal">
+                    <i class="fa fa-linkedin-square fa-2x fa-fw" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://plus.google.com/u/0/114150559474818565985">
+                    <i class="fa fa-google-plus-square fa-2x fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
+        <md-divider ></md-divider>
+        <div layout ="row" layout-align="center center">
+            <small class="copyright">© 2016-2023 Ulagellam Technologies Pvt Ltd, Trivandrum, Kerala, India</small>
+        </div>
+        <div>
+            <!-- </treasure-overlay-spinner> -->
+
+
+            <script src="bower_components/angular-route/angular-route.min.js"></script>
+            <script src="/node_modules/angular-aria/angular-aria.min.js"></script>
+            <script src="/node_modules/angular-animate/angular-animate.min.js"></script>
+            <script src="/node_modules/angular-material/angular-material.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+            <!--script src='js/spinner/treasure-overlay-spinner.min.js'></script-->
+            <script src="dist/app.min.js"></script>
+
+            <script>
+                          (function (i, s, o, g, r, a, m) {
+                              i['GoogleAnalyticsObject'] = r;
+                              i[r] = i[r] || function () {
+                                  (i[r].q = i[r].q || []).push(arguments)
+                              }, i[r].l = 1 * new Date();
+                              a = s.createElement(o),
+                                      m = s.getElementsByTagName(o)[0];
+                              a.async = 1;
+                              a.src = g;
+                              m.parentNode.insertBefore(a, m)
+                          })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            </script>
+
+            </body>
+            </html>

@@ -1,0 +1,18 @@
+<div layout="column" ng-cloak>
+
+  <md-content>
+    <md-list>
+      <md-subheader class="md-no-sticky"><h1>{{labels.translators}}</h1></md-subheader>
+      <md-list-item class="md-4-line" ng-repeat="translator in details">
+      <div class="box">
+        <img ng-src="{{translator.photo}}" class="md-avatar" alt="{{item.who}}" />
+      </div>
+        <div class="md-list-item-text" layout="column">
+          <h3>{{translator.name}}</h3>
+          <h4>{{translator.title}}</h4>
+          <p>{{translator.description}}</p>
+        </div>
+      </md-list-item>
+     </md-list>
+  </md-content>
+</div>

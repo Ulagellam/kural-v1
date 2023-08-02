@@ -1,0 +1,47 @@
+{
+    "id": 1,
+    "aboutTitle": "About Us",
+    "al1": "Kuralpal is a venture from Ulagellam.",
+    "al2": "Ulagellam is a fast growing startup in the Trichy, Tamil Nadu, India",
+    "contactTitle": "Contact Us",
+    "cl1": "Please drop us email to (please click the ... on the email address below to see the full email address)",
+    "teamtitle":"Team",
+    "team": [
+        {
+            "name": "Umamaheswaran TG (uma)",
+            "title": "Founder & CEO Ulagellam",
+            "photo": "img/uma.jpg",
+            "desc": "A Lecturer turned Software engineer turned Entrepreneur. Has 16+ years of experience in various fields teaching, training, development, production support etc. He was the President for all PG members JC club for two consecutive periods. Speaks less, listens more. Regular bootcamper, enjoys cooking & singing."
+        },
+        {
+            "name": "Chitra ",
+            "title": "Cofounder Ulagellam",
+            "photo": "img/chitra.jpg",
+            "desc": "Read & recorded each and every Kural clearly in Tamil. She is a multilingual expert & Poet. Her interests are Poetry writing & Singing."
+        },
+        {
+            "name": "Madhu Anbu",
+            "title": "Senior Manager at RTI(ADP)",
+            "photo": "img/madhu.jpg",
+            "desc": "Inspite of her busy schedule she willingly read & recorded each and every Kural clearly in Tamil. She is the Principal, Rocky Hill Tamil School, Connecticut. She also runs dance academy at Rocky Hill, CT. Active member of Federation of Tamil Associations of North America (FeTNA), CT"
+        },
+        {
+            "name": "Dr.M.Thangapandy",
+            "title": "HOD, GD Naidu Institute, Coimbatore",
+            "photo": "img/mt.jpg",
+            "desc": "He read & recorded Kural clearly in Tamil. He was the founding secretary of all PG JC club. He spends most of his time in R&D. Interested in Poetry writting & singing."
+        },
+        {
+            "name": "Srinivasan Muthuswamy",
+            "title": "Project Manager Cognizant",
+            "photo": "img/srini.jpg",
+            "desc": "He was the project coordinator for this project. He played a vital role arranging resources for recording and for PR. He is the active member of Federation of Tamil Associations of North America (FeTNA). Interested in Singing, Cultural dance, Poetry writting. He has done lot of stage performance & road shows for FeTNA."
+        },
+        {
+            "name": "Mohan Kumar PV",
+            "title": "Entrepreneur & Graphics Designer",
+            "photo": "img/mohan.jpg",
+            "desc": "He is our Graphics designer. Played a vital role in bringing up kuralpal live. His interests are trekking & painting."
+        }
+    ]
+}

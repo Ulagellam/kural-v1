@@ -1,0 +1,40 @@
+<div layout="column" ng-cloak>
+	<md-content flex layout-padding>
+		<div ng-cloak>
+		  <md-content>
+		    <md-tabs md-dynamic-height md-border-bottom>
+		      <md-tab label="{{details.aboutTitle}}">
+		        <md-content class="md-padding">
+					<p>{{details.al1}}</p>
+					<p>{{details.al2}}</p>
+                                        <br/>
+                                        <h4>{{details.contactTitle}}</h4>
+                                        <p>{{details.cl1}}</p>
+					<a href="http://www.google.com/recaptcha/mailhide/d?k=01ecAECCw0UTFSy4JfUdnC-A==&amp;c=NYtYqt8LgsC1mlB-At9gcEzxlVzfmP3B9W_V_O8M_eE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01ecAECCw0UTFSy4JfUdnC-A\x3d\x3d\x26c\x3dNYtYqt8LgsC1mlB-At9gcEzxlVzfmP3B9W_V_O8M_eE\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">i...</a>@kuralpal.org
+		        </md-content>
+		      </md-tab>
+		      <md-tab label="{{details.teamtitle}}">
+		          <md-content class="md-padding" >
+			         <div layout="column"  layout-xs="column">
+					    <md-card ng-repeat="team in details.team">
+				        <md-card-title>
+				          <md-card-title-text>
+				            <span class="md-headline">{{team.name}}</span>
+				            <span class="md-subhead">{{team.title}}</span>
+				          </md-card-title-text>
+				          <md-card-title-media>
+				            <div class="md-media-md card-media"><img src={{team.photo}} class="img-circle img-thumbnail" alt="Responsive image"></div>
+				          </md-card-title-media>
+				        </md-card-title>
+				        <md-card-content>
+				            <p>{{team.desc}}</p>
+				        </md-card-content>
+				        </md-card>
+			        </div>
+			    </md-content>
+		      </md-tab>
+		    </md-tabs>
+		  </md-content>
+		</div>
+	</md-content>
+</div>
